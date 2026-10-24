@@ -1,0 +1,15 @@
+NCLUB | RECORRIDOS Y COLISIONES - VERSION ACTUALIZADA
+
+1. Descomprime y abre esta carpeta en Visual Studio Code.
+2. En terminal: python -m http.server 8000
+3. Abre http://localhost:8000
+4. En recepción elige una opción del robot antes de seleccionar la zona.
+5. Para caminar manualmente utiliza WASD y arrastra el mouse para mirar.
+6. Las rutas se calculan con una malla A*; se evita entrar en la huella de edificios, lago y piscina.
+7. La cámara también tiene colisión simple con esas zonas. No es una simulación física de puertas ni interiores.
+8. Publicación: sube index.html en la raíz de un repositorio y despliega en Vercel como sitio estático.
+9. En Quest 3: abre la URL HTTPS con Meta Quest Browser y prueba ENTER VR. Requiere prueba real de controladores.
+
+IMPORTANTE: la zona Lounge VIP se representa en su entrada/terraza exterior (19,32), porque los edificios se tratan como obstáculos sólidos. Para entrar a interiores posteriormente hay que crear puertas reales y navegación interior.
+Los robots son aproximaciones geométricas, no las mallas oficiales del AGIBOT X2 Ultra.
+La aplicación requiere internet para cargar Three.js desde jsDelivr. Es una demo sin datos reales.
